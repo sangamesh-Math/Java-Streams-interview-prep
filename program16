@@ -1,0 +1,15 @@
+//Program to sort a list in ascending and descending order.
+
+import java.util.stream.*;
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		List<Integer> list = Arrays.asList(8,2,7,4,1);
+		
+		list.stream().sorted().forEach(System.out :: println); //ascending order
+		System.out.println("=====================");
+		list.stream().sorted(Comparator.reverseOrder()).forEach(System.out :: println); //descending order
+	}
+}
